@@ -11,6 +11,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+@font-face {
+  font-family: "BigSho";
+  src: local("BigSho"),
+    url("./assets/fonts/Big_Shoulders_Display/BigShouldersDisplay-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lex";
+  src: local("Lex"),
+    url("./assets/fonts/Lexend_Deca/LexendDeca-VariableFont_wght.ttf") format("truetype");
+}
+
 
 ul, nav{
   list-style: none;

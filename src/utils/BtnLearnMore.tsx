@@ -1,8 +1,10 @@
+import * as SC from '../components/buttonLearnStyled'
+
 
 export const BtnLearnMore:React.FC = () => {
   return (
     <div>
-        <button>Learn More</button>
+        <SC.ButtonLearn>Learn More</SC.ButtonLearn>
     </div>
   )
 }
