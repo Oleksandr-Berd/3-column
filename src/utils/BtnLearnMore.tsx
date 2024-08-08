@@ -1,10 +1,13 @@
-import * as SC from '../components/buttonLearnStyled'
+import * as SC from '../styles/columnStyled'
 
 
 export const BtnLearnMore:React.FC = () => {
+
+  const content = "Learn More"
+
   return (
     <div>
-        <SC.ButtonLearn>Learn More</SC.ButtonLearn>
+        <button type='button'>{content}</button>
     </div>
   )
 }
