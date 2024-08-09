@@ -30,12 +30,19 @@ export const MainCon = styled.div`
   padding-left: 48px;
   padding-right: 48px;
 
-  background-color: ${({ theme, title }) =>
-    title === "sedans"
-      ? theme.color.sedans
-      : title === "suvs"
-      ? theme.color.suvs
-      : theme.color.luxury};
+  background-color: ${({ theme, title }) => {
+
+  switch (title){
+    case "sedans":
+       return theme.color.sedans
+        case "suvs":
+        return    theme.color.suvs
+        case "luxury":
+            return theme.color.luxury
+            default:
+            return
+      }
+    }};
 
   & > *:not(:last-child) {
     margin-bottom: 25px;
