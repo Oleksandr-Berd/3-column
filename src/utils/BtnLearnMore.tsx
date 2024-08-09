@@ -1,13 +1,18 @@
-import * as SC from '../styles/columnStyled'
+import * as SC from '../styles/btnStyle'
+
+interface IProps {
+  title:string,
+  toggle: ()=> void
+}
 
 
-export const BtnLearnMore:React.FC = () => {
+export const BtnLearnMore:React.FC<IProps> = ({title, toggle}) => {
 
   const content = "Learn More"
 
   return (
     <div>
-        <button type='button'>{content}</button>
+        <SC.BtnLearnMore type='button' title={title} onClick={toggle}>{content}</SC.BtnLearnMore>
     </div>
   )
 }

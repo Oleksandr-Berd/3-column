@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import * as SC from '../styles/columnStyled'
 
 
@@ -6,11 +7,13 @@ import { BtnLearnMore } from '../utils/BtnLearnMore'
 interface IProps {
   title: string,
   text:string,
-  el: React.ElementType
+  el: React.ElementType,
+  toggle: ()=> void
 }
 
-export const Column:React.FC <IProps>= ({title, text,el:Icon}) => {
+export const Column:React.FC <IProps>= (props) => {
 
+const {title, text, el:Icon, toggle} = props
 
   return (
     <SC.MainCon title={title}>
@@ -21,7 +24,7 @@ export const Column:React.FC <IProps>= ({title, text,el:Icon}) => {
     <div>
     <SC.Content>{text}</SC.Content>
     </div>
-    <BtnLearnMore/>
+    <BtnLearnMore title={title} toggle={toggle}/>
     </SC.MainCon>
   )
 }

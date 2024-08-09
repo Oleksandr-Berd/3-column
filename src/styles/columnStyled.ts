@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const LayoutStyled = styled.div`
+position: relative;
+
   & > div:first-child {
     border-bottom-left-radius: 8px;
     border-top-right-radius: 8px;
@@ -28,7 +30,6 @@ export const MainCon = styled.div`
   padding-top: 48px;
   padding-bottom: 48px;
   padding-left: 48px;
-  padding-right: 48px;
 
   background-color: ${({ theme, title }) => {
 
@@ -71,7 +72,7 @@ export const Title = styled.h2`
 export const Content = styled.p`
   font-size: 15px;
   font-family: "Lex";
-  line-height: 25px;
+  line-height: 1.67;
 
   color: ${({ theme }) => theme.color.text};
 
