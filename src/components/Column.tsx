@@ -1,4 +1,3 @@
-import { useState } from "react";
 import * as SC from "../styles/appStyled";
 
 import { BtnLearnMore } from "../utils/BtnLearnMore";
