@@ -8,7 +8,7 @@ interface IProps {
 
 export const BtnLearnMore:React.FC<IProps> = ({title, toggle}) => {
 
-  const content = "Learn More"
+  const content:string = "Learn More"
 
   return (
     <div>
